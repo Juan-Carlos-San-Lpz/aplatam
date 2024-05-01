@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba Lógica</title>
+    <!-- Agregar enlaces a los estilos de Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-200">
+
+<div class="container mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold text-center mb-8">Prueba Lógica</h1>
+
+    <!-- Contenedor principal -->
+    <div class="flex flex-col md:flex-row gap-4">
+
+        <!-- Contenedor para cookies -->
+        <div class="w-full md:w-1/2 bg-white p-4 rounded-md shadow-md">
+            <h2 class="text-xl font-bold mb-4">Cookies</h2>
+            <form id="cookies-form" class="mb-4">
+                <div class="flex flex-col mb-4">
+                    <label for="cookies-name" class="font-semibold">Nombre:</label>
+                    <input type="text" id="cookies-name" name="cookies-name" class="w-full border border-gray-300 rounded-md px-3 py-2" required>
+                </div>
+                <div class="flex flex-col mb-4">
+                    <label for="cookies-id" class="font-semibold">ID:</label>
+                    <input type="text" id="cookies-id" name="cookies-id" class="w-full border border-gray-300 rounded-md px-3 py-2" required>
+                </div>
+                <div class="flex flex-col mb-4">
+                    <label for="cookies-data" class="font-semibold">Data:</label>
+                    <input type="text" id="cookies-data" name="cookies-data" class="w-full border border-gray-300 rounded-md px-3 py-2" required>
+                </div>
+                <div class="flex justify-center">
+                    <button type="submit" id="create-cookie" class="btn-create bg-green-500 text-white px-4 py-2 mr-4">Crear</button>
+                    <button type="button" id="show-cookie" class="btn-show bg-yellow-500 text-white px-4 py-2 mr-4">Mostrar</button>
+                    <button type="button" id="delete-cookie" class="btn-delete bg-red-500 text-white px-4 py-2">Eliminar</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Contenedor para sessionStorage -->
+        <div class="w-full md:w-1/2 bg-white p-4 rounded-md shadow-md">
+            <h2 class="text-xl font-bold mb-4">Session Storage</h2>
+            <form id="session-form" class="mb-4">
+                <div class="flex flex-col mb-4">
+                    <label for="session-name" class="font-semibold">Nombre:</label>
+                    <input type="text" id="session-name" name="session-name" class="w-full border border-gray-300 rounded-md px-3 py-2" required>
+                </div>
+                <div class="flex flex-col mb-4">
+                    <label for="session-id" class="font-semibold">ID:</label>
+                    <input type="text" id="session-id" name="session-id" class="w-full border border-gray-300 rounded-md px-3 py-2" required>
+                </div>
+                <div class="flex flex-col mb-4">
+                    <label for="session-data" class="font-semibold">Data:</label>
+                    <input type="text" id="session-data" name="session-data" class="w-full border border-gray-300 rounded-md px-3 py-2" required>
+                </div>
+                <div class="flex justify-center">
+                    <button type="submit" id="create-session" class="btn-create bg-green-500 text-white px-4 py-2 mr-4">Crear</button>
+                    <button type="button" id="show-session" class="btn-show bg-yellow-500 text-white px-4 py-2 mr-4">Mostrar</button>
+                    <button type="button" id="delete-session" class="btn-delete bg-red-500 text-white px-4 py-2">Eliminar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Agregar enlace al archivo JavaScript -->
+<script src="js/script.js"></script>
+</body>
+</html>
